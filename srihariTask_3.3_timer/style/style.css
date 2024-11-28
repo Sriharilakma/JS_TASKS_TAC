@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial, sans-serif";
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.section-center {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  max-width: 600px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .section-center {
+    padding: 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .section-center {
+    padding: 1rem;
+  }
+}
+
+.gift-img img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.gift-info {
+  margin-top: 1rem;
+}
+.gift-info h3 {
+  color: #007bff;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+@media (max-width: 768px) {
+  .gift-info h3 {
+    font-size: 1.3rem;
+  }
+}
+.gift-info h4.giveaway {
+  color: #333;
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+@media (max-width: 768px) {
+  .gift-info h4.giveaway {
+    font-size: 0.9rem;
+  }
+}
+.gift-info p {
+  color: #333;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 768px) {
+  .gift-info p {
+    font-size: 0.8rem;
+  }
+}
+
+.deadline {
+  display: flex;
+  justify-content: space-around;
+  background-color: aliceblue;
+  padding: 1rem;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .deadline {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 480px) {
+  .deadline {
+    padding: 0.5rem;
+  }
+}
+
+.deadline-format {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5rem;
+}
+.deadline-format div {
+  background: rgb(30, 35, 101);
+  color: #fff;
+  font-family: roboto;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+.deadline-format div h4 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .deadline-format div h4 {
+    font-size: 1rem;
+  }
+}
+.deadline-format span {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: white;
+  font-family: roboto;
+}
+@media (max-width: 768px) {
+  .deadline-format span {
+    font-size: 0.8rem;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,134 @@
+// Variables for reusable styling
+$font-family: 'Arial, sans-serif'; // Default font family
+$bg-color: #f1f1f1; // Background color
+$primary-color: #007bff; // Primary color for highlights
+$text-color: #333; // Default text color
+$shadow-color: rgba(0, 0, 0, 0.1); // Shadow color
+
+// Global styles
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family;
+  background-color: $bg-color;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+  padding: 2rem;
+}
+
+// Section styles
+.section-center {
+  background: #fff; 
+  border-radius: 10px; 
+  box-shadow: 0 5px 15px $shadow-color; 
+  padding: 2rem; 
+  max-width: 600px; 
+  text-align: center;
+
+  // Responsive styles for smaller screens
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 1rem;
+  }
+}
+
+// Gift image styles
+.gift-img img {
+  max-width: 100%; 
+  border-radius: 10px; 
+}
+
+// Gift info styles
+.gift-info {
+  margin-top: 1rem;
+
+  h3 {
+    color: $primary-color;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+
+    // Responsive font size
+    @media (max-width: 768px) {
+      font-size: 1.3rem;
+    }
+  }
+
+  h4.giveaway {
+    color: $text-color;
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+
+    @media (max-width: 768px) {
+      font-size: 0.9rem;
+    }
+  }
+
+  p {
+    color: $text-color;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+
+    @media (max-width: 768px) {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+// Timer styles
+.deadline {
+  display: flex;
+  justify-content: space-around; // Equal spacing
+  background-color: aliceblue;
+  padding: 1rem;
+  border-radius: 10px;
+
+  // Wrap items for smaller screens
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0.5rem;
+  }
+}
+
+.deadline-format {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5rem;
+
+  div {
+    background: rgb(30, 35, 101); // Primary background for counters
+    color: #fff; // White text
+    font-family: roboto;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+
+    h4 {
+      font-size: 1.2rem;
+      margin: 0;
+
+      @media (max-width: 768px) {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  span {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: white;
+    font-family: roboto;
+
+    @media (max-width: 768px) {
+      font-size: 0.8rem;
+    }
+  }
+}
