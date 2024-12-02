@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="whole-container">
+        <div class="container">
+            <h2 class="main-heading">The Weather</h2>
+            <div>
+                <h1 class="temperature"></h1>
+                <div class="time_of_city">
+                    <h1 class="name"></h1>
+                    <small>
+                        <span class="time"></span>
+                        <span class="date"></span>
+                    </small>
+                </div>
+                <div class="weather">
+                    <img src="#" alt="Weather Icon" class="icon"/>
+                    <span class="condition"></span>
+                </div>
+            </div>
+        </div>
+        <div class="info-container">
+            <form id="location">
+                <input type="text" class="search" placeholder="Enter Location....">
+                <button type="submit" class="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+            <ul class="cities">
+                <li class="city">Nizamabad</li>
+                <li class="city">Adilabad</li>
+                <li class="city">Kamareddy</li>
+                <li class="city">Karimnagar</li>
+            </ul>
+            <ul class="details">
+                <h3>Weather Details</h3>
+                <li>
+                    <span>Cloudy</span>
+                    <span class="cloud">89%</span>
+                </li>
+                <li>
+                    <span>Humidity</span>
+                    <span class="humidity">64%</span>
+                </li>
+                <li>
+                    <span>Wind</span>
+                    <span class="wind">8km/h</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
